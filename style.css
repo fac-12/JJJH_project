@@ -1,3 +1,54 @@
+* {
+    font-family: 'Oxygen', sans-serif;
+}
+
+.header__img {
+    position: relative;
+    max-width: 100%;
+}
+
+.header__nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header__container {
+    position: absolute;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+}
+
+.header__h1box {
+    position: relative;
+    width: 40%;
+}
+
+.header__h1box__h1 {
+    letter-spacing: 0.1em;
+}
+
+.about__container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.about__flexcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about__flexcontainer * {
+    width: 45%;
+}
+
+.about__img {
+    width: 40%;
+    height: 40%;
+}
+
 .team_section__profile img {
   width: 200px;
 }
