@@ -8,14 +8,13 @@
 }
 
 .header__nav {
-  position: absolute;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.8);
   top: 0;
   right: 0;
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  margin-right: 10px;
-  margin-top: 10px;
   z-index: 1;
 }
 
@@ -123,6 +122,14 @@
   .team_section {
     flex-direction: row;
   }
+
+  .header__h1box {
+
+  }
+}
+
+@media (min-width: 750px;) {
+
 }
 
 @media (max-width: 600px)  {
@@ -141,10 +148,9 @@
   }
 
   .responsive .header__nav__item {
-    padding: 20px 15px;
-    text-align: right;
-    display: inline;
-    width: 60px;
+    text-align: center;
+    display: block;
+    width: 100%;
   }
 
 }
