@@ -154,6 +154,10 @@ width: 90%;
   height: 25px;
 }
 
+label {
+  display: none;
+}
+
 input, textarea, button {
   font-family: 'Oxygen', sans-serif;
   font: 1.5em;
