@@ -1,52 +1,76 @@
 * {
-    font-family: 'Oxygen', sans-serif;
+  font-family: 'Oxygen', sans-serif;
 }
 
 .header__img {
-    position: relative;
-    max-width: 100%;
+  position: relative;
+  max-width: 100%;
 }
 
 .header__nav {
-    position: absolute;
-    top: 0;
-    right: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  margin-top: 10px;
+  z-index: 1;
+}
+
+.header__nav__item {
+  padding: 20px 20px;
+  text-decoration: none;
+  display: block;
+
+}
+
+.header__nav__item:hover {
+  background: rgba(255,255,255,0.5);
+}
+
+.header__nav .icon {
+  display: none;
+  margin: 10px 20px;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
 .header__container {
-    position: absolute;
-    width: 90%;
-    top: 5%;
-    left: 5%;
+  position: absolute;
+  width: 90%;
+  top: 5%;
+  left: 5%;
 }
 
 .header__h1box {
-    position: relative;
-    width: 40%;
+  position: relative;
+  width: 40%;
 }
 
 .header__h1box__h1 {
-    letter-spacing: 0.1em;
+  letter-spacing: 0.1em;
 }
 
 .about__container {
-    margin: 0 auto;
-    width: 90%;
+  margin: 0 auto;
+  width: 90%;
 }
 
 .about__flexcontainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .about__flexcontainer * {
-    width: 45%;
+  width: 45%;
 }
 
 .about__img {
-    width: 40%;
-    height: 40%;
+  width: 40%;
+  height: 40%;
 }
 
 .team_section__profile img {
@@ -68,7 +92,7 @@
   display: block;
 }
 
-.team_section__profile__overlay{
+.team_section__profile__overlay {
   position: relative;
 }
 
@@ -95,10 +119,32 @@
   opacity: 1;
 }
 
-
-
 @media (min-width: 550px) {
   .team_section {
     flex-direction: row;
   }
+}
+
+@media (max-width: 600px)  {
+  .header__nav .header__nav__item {
+    display: none;
+  }
+
+  .header__nav .icon {
+    display: block;
+  }
+
+  .responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .responsive .header__nav__item {
+    padding: 20px 15px;
+    text-align: right;
+    display: inline;
+    width: 60px;
+  }
+
 }

@@ -13,6 +13,7 @@ Including information about us as a team and about individual team members, as w
 
 ## How?
 TBD
+Flexbox hover z-index
 
 
 ## User stories
