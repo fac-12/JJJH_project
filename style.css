@@ -119,6 +119,47 @@
   opacity: 1;
 }
 
+input, textarea, button {
+  font-family: 'Oxygen', sans-serif;
+  font: 1.5em;
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+}
+
+button {
+  width: 322px;
+  padding: 20px 0;
+  background:#649CB2;
+  border:none;
+}
+
+iframe {
+  width: 100vw;
+}
+
+.contact-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.contact {
+  display: flex;
+}
+
+form, .social {
+  flex: 1;
+}
+
+i {
+  font-size: 2em;
+}
+
 @media (min-width: 550px) {
   .team_section {
     flex-direction: row;
