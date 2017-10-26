@@ -1,5 +1,9 @@
 * {
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.header {
+  position: relative;
 }
 
 .header__img {
@@ -8,26 +12,27 @@
 }
 
 .header__nav {
-  position: absolute;
+  position: fixed;
+  background: white;
   top: 0;
   right: 0;
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  margin-right: 10px;
-  margin-top: 10px;
   z-index: 1;
+  padding: 0 40px;
 }
 
 .header__nav__item {
   padding: 20px 20px;
   text-decoration: none;
   display: block;
-
+  color: #090f0f;
 }
 
 .header__nav__item:hover {
-  background: rgba(255,255,255,0.5);
+  background: #649cb2;
+  color: white;
 }
 
 .header__nav .icon {
@@ -35,22 +40,35 @@
   margin: 10px 20px;
   text-decoration: none;
   font-size: 1.5rem;
+  color: #090f0f;
 }
 
 .header__container {
   position: absolute;
   width: 90%;
-  top: 5%;
+  top: 25%;
   left: 5%;
 }
 
 .header__h1box {
   position: relative;
-  width: 40%;
+  width: 60%;
+  margin-top: 25px;
+  color: #090f0f;
 }
 
 .header__h1box__h1 {
+  font-weight: normal;
+  margin: 5px 0;
   letter-spacing: 0.1em;
+  font-size: 6vw;
+}
+
+.header__h1box__subhead {
+  letter-spacing: 0.1em;
+  font-size: 2vw;
+  margin: 0;
+  width: 80%;
 }
 
 .about__container {
@@ -58,19 +76,36 @@
   width: 90%;
 }
 
+.about__text {
+  /*width: 500px;*/
+  line-height: 1.8;
+  margin-left: 50px;
+  text-align: justify;
+
+}
+
+
+.about__container__header {
+  padding: 20px 0;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+}
+
 .about__flexcontainer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  /*flex-wrap: wrap;*/
+  justify-content: flex-start;
+  margin-bottom: 50px;
 }
 
-.about__flexcontainer * {
+/*.about__flexcontainer * {
   width: 45%;
-}
+}*/
 
 .about__img {
-  width: 40%;
-  height: 40%;
+  width: 45%;
+  height: 45%;
+
 }
 
 .team_section {
@@ -167,6 +202,20 @@ i {
     flex-wrap: wrap;
   }
 }
+
+@media (max-width: 925px) {
+
+  .about__flexcontainer {
+    flex-wrap: wrap;
+  }
+
+  .about__img {
+    margin: auto;
+    width: 80%;
+    height: 80%;
+  }
+}
+
 @media (max-width: 600px)  {
   .header__nav .header__nav__item {
     display: none;
@@ -182,11 +231,14 @@ i {
     align-items: flex-end;
   }
 
+  .header__nav {
+    padding: 0;
+  }
+
   .responsive .header__nav__item {
-    padding: 20px 15px;
-    text-align: right;
-    display: inline;
-    width: 60px;
+    display: block;
+    text-align: center;
+    width: 100%;
   }
 
 }
