@@ -73,11 +73,15 @@
   height: 40%;
 }
 
-.team_section__profile img {
-  width: 200px;
+.team_section {
+  background-color: #f6fbfc;
+}
+ .team__container{
+margin: 0 auto;
+width: 90%;
 }
 
-.team_section {
+.team__flexcontainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,38 +89,34 @@
 
 .team_section__profile {
   flex: 1;
+  padding: 1%;
+}
+.team_section__profile__text{
+  width: 200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 4em;
 }
 
-.team_section__profile img {
+.team_section__profile__headshot__img img {
   margin: 0 auto;
   display: block;
+  border-radius: 50%;
+  border: 1px solid black;
+  width: 200px;
 }
 
-.team_section__profile__overlay {
-  position: relative;
+.team_section__icon__flexcontainer{
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+  padding: 0 15px;
+  margin: 0 auto 2em;
 }
-
-.team_section__profile__overlay__img {
-  opacity: 1;
-  transition: .2s ease;
-}
-
-.team_section__profile__overlay:hover .team_section__profile__overlay__img {
-  opacity: 0.3;
-}
-
-.team_section__profile__overlay__text {
-  transition: .2s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(50%, -50%);
-}
-
-.team_section__profile__overlay:hover .team_section__profile__overlay__text {
-  opacity: 1;
+.team_section__icon__codewars{
+  width: 26px;
+  height: 25px;
 }
 
 input, textarea, button {
@@ -160,12 +160,13 @@ i {
   font-size: 2em;
 }
 
+
 @media (min-width: 550px) {
-  .team_section {
+  .team__flexcontainer{
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
-
 @media (max-width: 600px)  {
   .header__nav .header__nav__item {
     display: none;
