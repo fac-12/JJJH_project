@@ -73,8 +73,9 @@
 }
 
 .about__container {
-    margin: 0 auto;
-    width: 90%;
+  margin: 0 auto;
+  width: 90%;
+  padding-bottom: 40px;
 }
 
 .about__text {
@@ -84,17 +85,21 @@
     text-align: justify;
 }
 
-.about__container__header {
-    padding: 20px 0;
-    font-weight: normal;
-    letter-spacing: 0.1em;
+
+.about__container__header,
+.team__header,
+.contact__header
+ {
+  margin: 0;
+  padding: 40px 0;
+  font-weight: normal;
+  letter-spacing: 0.1em;
 }
 
 .about__flexcontainer {
-    display: flex;
-    /*flex-wrap: wrap;*/
-    justify-content: flex-start;
-    margin-bottom: 50px;
+  display: flex;
+  /*flex-wrap: wrap;*/
+  justify-content: flex-start;
 }
 
 
@@ -156,12 +161,23 @@
     height: 25px;
 }
 
+.team_section__icon__flexcontainer a,
+.team_section__icon__flexcontainer a:visited  {
+  color: inherit;
+  text-transform: none;
+}
+
+.team_section__icon__codewars{
+  width: 26px;
+  height: 25px;
+}
+
 label {
   display: none;
 }
 
 input, textarea, button {
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font: 1.5em;
   width: 300px;
   padding: 10px;
@@ -174,10 +190,11 @@ textarea {
 }
 
 button {
-    width: 322px;
-    padding: 20px 0;
-    background: #649CB2;
-    border: none;
+  width: 322px;
+  padding: 20px 0;
+  background:#649CB2;
+  border:none;
+  margin-bottom: 20px;
 }
 
 iframe {
@@ -190,7 +207,9 @@ iframe {
 }
 
 .contact {
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
 }
 
 form,
@@ -200,6 +219,23 @@ form,
 
 i {
     font-size: 2em;
+}
+
+.social__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.social div p {
+  display: inline;
+  /*vertical-align: middle;*/
+  margin: 0;
+  padding-left: 20px;
+}
+
+.ion-social-facebook-outline {
+  padding: 0 20px;
 }
 
 .footer {
