@@ -2,6 +2,14 @@
   font-family: 'Oxygen', sans-serif;
 }
 
+.header {
+  background-image: url('./images/head_background.jpg');
+  width: 100%;
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .header__img {
   position: relative;
   max-width: 100%;
