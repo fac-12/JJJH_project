@@ -77,10 +77,11 @@
 }
 
 .about__text {
+  /*width: 500px;*/
   line-height: 1.8;
-  margin: 0;
+  margin-left: 50px;
   text-align: justify;
-  font-size: 100%;
+
 }
 
 
@@ -92,8 +93,9 @@
 
 .about__flexcontainer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  /*flex-wrap: wrap;*/
+  justify-content: flex-start;
+  margin-bottom: 50px;
 }
 
 /*.about__flexcontainer * {
@@ -101,8 +103,9 @@
 }*/
 
 .about__img {
-  width: 50%;
-  height: 40%;
+  width: 45%;
+  height: 45%;
+
 }
 
 .team_section__profile img {
@@ -151,18 +154,64 @@
   opacity: 1;
 }
 
+input, textarea, button {
+  font-family: 'Oxygen', sans-serif;
+  font: 1.5em;
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+}
+
+button {
+  width: 322px;
+  padding: 20px 0;
+  background:#649CB2;
+  border:none;
+}
+
+iframe {
+  width: 100vw;
+}
+
+.contact-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.contact {
+  display: flex;
+}
+
+form, .social {
+  flex: 1;
+}
+
+i {
+  font-size: 2em;
+}
+
 @media (min-width: 550px) {
   .team_section {
     flex-direction: row;
   }
-
-  .header__h1box {
-
-  }
 }
 
-@media (min-width: 750px;) {
+@media (max-width: 925px) {
 
+  .about__flexcontainer {
+    flex-wrap: wrap;
+  }
+
+  .about__img {
+    margin: auto;
+    width: 80%;
+    height: 80%;
+  }
 }
 
 @media (max-width: 600px)  {

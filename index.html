@@ -10,6 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Team Us</title>
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="resources/ionicons.css">
   <link rel="stylesheet" href="resources/normalize.css">
   <link rel="stylesheet" href="style.css">
 
@@ -95,8 +96,64 @@
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="contact-container">
+    <h2>Contact</h2>
+    <section class="contact">
+      <form action="#" method="post">
+        <div>
+          <label for="name"></label>
+          <input id="name" type="text" name="name" placeholder="Name" required>
+        </div>
 
+        <div>
+          <label for="email"></label>
+          <input id="email" type="email" name="email" placeholder="Email" required>
+        </div>
+
+        <div>
+          <label for="subject"></label>
+          <input id="subject" type="text" name="subject" placeholder="Subject" required>
+        </div>
+
+        <div>
+          <label for="message"></label>
+          <textarea id="message" name="message" placeholder="Message"></textarea>
+        </div>
+
+        <div class="button">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+
+      <section id="social" class="social">
+        <div>
+          <i class="ion-ios-email-outline"></i>
+          <p>contact@fourdigital.com</p>
+        </div>
+        <div>
+          <i class="ion-ios-telephone-outline"></i>
+          <p>01632 960076</p>
+        </div>
+        <div>
+          <div>
+            <i class="ion-social-twitter-outline"></i>
+          </div>
+          <div>
+            <i class="ion-social-facebook-outline"></i>
+          </div>
+          <div>
+            <i class="ion-social-instagram-outline"></i>
+          </div>
+
+        </div>
+      </section>
+    </section>
+
+  </section>
+
+  <section id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.105790742839!2d-0.047447402558278146!3d51.529619446551756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761d26bc44eb87%3A0x98659e99242078ed!2sFounders+%26+Coders!5e0!3m2!1sen!2suk!4v1509012095543"
+      width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
   </section>
 
   <footer></footer>
