@@ -147,6 +147,10 @@
     width: 200px;
 }
 
+.team__team-link:hover {
+  opacity: 0.5;
+}
+
 .team_section__icon__flexcontainer {
     align-items: center;
     display: flex;
@@ -204,17 +208,27 @@ iframe {
 .contact-container {
     width: 90%;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
 }
 
 .contact {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 40px;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 form,
 .social {
-    flex: 1;
+    /*flex: 1;*/
 }
 
 i {
