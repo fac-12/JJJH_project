@@ -73,9 +73,9 @@
 }
 
 .about__container {
-  margin: 0 auto;
-  width: 90%;
-  padding-bottom: 40px;
+    margin: 0 auto;
+    width: 90%;
+    padding-bottom: 40px;
 }
 
 .about__text {
@@ -85,21 +85,19 @@
     text-align: justify;
 }
 
-
 .about__container__header,
 .team__header,
-.contact__header
- {
-  margin: 0;
-  padding: 40px 0;
-  font-weight: normal;
-  letter-spacing: 0.1em;
+.contact__header {
+    margin: 0;
+    padding: 40px 0;
+    font-weight: normal;
+    letter-spacing: 0.1em;
 }
 
 .about__flexcontainer {
-  display: flex;
-  /*flex-wrap: wrap;*/
-  justify-content: flex-start;
+    display: flex;
+    /*flex-wrap: wrap;*/
+    justify-content: flex-start;
 }
 
 
@@ -148,7 +146,7 @@
 }
 
 .team__team-link:hover {
-  opacity: 0.5;
+    opacity: 0.5;
 }
 
 .team_section__icon__flexcontainer {
@@ -166,26 +164,28 @@
 }
 
 .team_section__icon__flexcontainer a,
-.team_section__icon__flexcontainer a:visited  {
-  color: inherit;
-  text-transform: none;
+.team_section__icon__flexcontainer a:visited {
+    color: inherit;
+    text-transform: none;
 }
 
-.team_section__icon__codewars{
-  width: 26px;
-  height: 25px;
+.team_section__icon__codewars {
+    width: 26px;
+    height: 25px;
 }
 
 label {
-  display: none;
+    display: none;
 }
 
-input, textarea, button {
-  font-family: 'Quicksand', sans-serif;
-  font: 1.5em;
-  width: 300px;
-  padding: 10px;
-  margin-bottom: 10px;
+input,
+textarea,
+button {
+    font-family: 'Quicksand', sans-serif;
+    font: 1.5em;
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 textarea {
@@ -194,11 +194,11 @@ textarea {
 }
 
 button {
-  width: 322px;
-  padding: 20px 0;
-  background:#649CB2;
-  border:none;
-  margin-bottom: 20px;
+    width: 322px;
+    padding: 20px 0;
+    background: #649CB2;
+    border: none;
+    margin-bottom: 20px;
 }
 
 iframe {
@@ -215,15 +215,15 @@ iframe {
 }
 
 .contact {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .social {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 form,
@@ -236,20 +236,20 @@ i {
 }
 
 .social__container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .social div p {
-  display: inline;
-  /*vertical-align: middle;*/
-  margin: 0;
-  padding-left: 20px;
+    display: inline;
+    /*vertical-align: middle;*/
+    margin: 0;
+    padding-left: 20px;
 }
 
 .ion-social-facebook-outline {
-  padding: 0 20px;
+    padding: 0 20px;
 }
 
 .footer {
